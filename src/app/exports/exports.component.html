@@ -1,0 +1,13 @@
+<div class="col-md-2">
+    <label for="pays"> Pays: </label><br>
+    <select id="pays" (change)="onPays()" class="selectpicker" data-live-search="true" data-width="fit" title="sélectionner un pays">
+        <option *ngFor="let p of pays" [value]="p">{{p}}</option>
+      </select>
+    <label for="partenaire"> Partenaire: </label>
+    <select id="Partenaire" (change)="onPart()" class="selectpicker" data-live-search="true" data-width="fit" title="sélectionner un pays">
+        <option *ngFor="let p of partnaires" [value]="p">{{p}}</option>
+      </select>
+</div> 
+<div class="col-md-10" >
+    <div [chart]='chart'></div>
+</div>
