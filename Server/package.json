@@ -1,0 +1,17 @@
+{
+  "name": "trade-center-server",
+  "version": "0.1.2",
+  "description": "backend side of the trade-center application",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
