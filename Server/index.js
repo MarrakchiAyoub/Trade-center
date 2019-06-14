@@ -94,7 +94,6 @@ app.use(cors()).get("/Partenaires", function(req,res){
                     result = obj;
                     if(result.mesures){
                         result.mesures = castYear(result.mesures);
-                        console.log(result.mesures[0]);
                         result.mesures = orderData(result.mesures);
                     }
                 res.json(result);
