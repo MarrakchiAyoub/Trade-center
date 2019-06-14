@@ -19,6 +19,7 @@ export class ExportsComponent implements OnInit {
   private df : DataFrame;
   private chart : Chart;
   private query : HttpParams = new HttpParams();
+  private name = $('pays').val()? $('pays').val(): "World";
 
   constructor(private paysService: PaysService, private http : HttpClient) { }
 
@@ -62,7 +63,7 @@ export class ExportsComponent implements OnInit {
               }
           },
           series: [{
-              name: 'Somme',
+              name: this.name,
               data: this.df.select('value').toArray()
           }]
       });
@@ -74,6 +75,7 @@ export class ExportsComponent implements OnInit {
   }
   private onPays = ()=>{
     this.query = this.query.set('pays', $('#pays').val());
+    this.name = $('#pays').val();
     this.loadChart();
   }
   private onPart(){
