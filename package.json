@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "angular-highcharts": "^6.2.6",
-    "bootstrap": "^3.3.7",
+    "bootstrap": ">= 3.3.7, < 4.0.0",
     "bootstrap-select": "^1.13.10",
     "core-js": "^2.5.4",
     "dataframe-js": "^1.4.1",
