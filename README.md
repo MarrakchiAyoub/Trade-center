@@ -1,8 +1,15 @@
 # TradeCenter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+you need to have mongoDB installed to work with this project.
+you also need to have Node.Js.
+## Importing Data
 
+using your terminal use the mongoimport commande to import the Json generated from the csv files:
+  `mongoimport --db project --collection trade --type json --file data.json --jsonArra`
 ## Development server
+
+Access the server folder and run `node index.js` to run the backend server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
