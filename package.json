@@ -25,7 +25,7 @@
     "bootstrap-select": "^1.13.10",
     "core-js": "^2.5.4",
     "dataframe-js": "^1.4.1",
-    "highcharts": "^6.2.0",
+    "highcharts": "^9.0.0",
     "jquery": "^3.4.1",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
